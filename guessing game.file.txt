@@ -1,0 +1,17 @@
+import random
+comp=random.randint(1,100)
+for i in range(5):
+    user=int(input("enter a guessing number"))
+    if(comp==user):
+       print("user will win") 
+       break
+    elif(comp>user):
+        d=(comp-user)
+        print("ur number is less, add",{d})
+    elif(comp<user):
+        d=(user-comp)
+        print("ur number is high,sub",{d})
+else:
+    print("computer will win")
+    
+    
